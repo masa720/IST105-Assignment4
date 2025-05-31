@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Django Calculator</title>
+</head>
+<body>
+  <h1>Django Calculator</h1>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Calculate</button>
+  </form>
+
+  {% if message %}
+    <p>Message: {{ message }}</p>
+  {% endif %}
+  {% if result %}
+    <p><strong>Result:</strong> {{ result }}</p>
+  {% elif error %}
+    <p style="color:red;"><strong>Error:</strong> {{ error }}</p>
+  {% endif %}
+</body>
+</html>
