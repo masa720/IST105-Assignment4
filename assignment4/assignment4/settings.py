@@ -25,7 +25,13 @@ SECRET_KEY = 'django-insecure-4dl9#$v*(3dg0v=altr)a)l7ag#!m-w*&o)y6y%_=s9)_^k=ji
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [''] # Depens on server
+ALLOWED_HOSTS = [
+    '52.90.105.108',
+    '54.164.22.212',
+    'assignment4-lb-1406165660.us-east-1.elb.amazonaws.com',
+    '172.31.95.171',
+    '172.31.82.246',
+] # Depens on server
 
 
 # Application definition
@@ -37,7 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'calculator'
+    'calculator',
 ]
 
 MIDDLEWARE = [
